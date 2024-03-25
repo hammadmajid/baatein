@@ -1,0 +1,18 @@
+{
+  "name": "baatein",
+  "version": "0.1.0",
+  "description": "A realtime chat application built with MERN stack.",
+  "main": "server.js",
+  "scripts": {
+    "server": "tsc backend/server.ts && node dist/backend/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.1",
+    "typescript": "^5.4.3"
+  }
+}
