@@ -4,7 +4,7 @@
   "description": "A realtime chat application built with MERN stack.",
   "main": "server.js",
   "scripts": {
-    "server": "tsc backend/server.ts && node dist/backend/server.js"
+    "server": "tsc && node dist/backend/server.js"
   },
   "license": "MIT",
   "dependencies": {

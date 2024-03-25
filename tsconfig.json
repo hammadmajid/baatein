@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2023",
-    "module": "NodeNext",
+    "target": "ES2022",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -11,5 +11,8 @@
   },
   "lib": [
     "ES2023",
+  ],
+  "exclude": [
+    "frontend"
   ]
 }
