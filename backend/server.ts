@@ -2,6 +2,7 @@ import express, {Express} from 'express';
 import dotenv from 'dotenv';
 
 import authRouter from './routes/api/auth';
+import connectToMongoDB from "./db/connectToMongoDB";
 
 dotenv.config();
 
@@ -15,5 +16,8 @@ app.get('/', (_req, res) => {
 app.use('/api/auth', authRouter);
 
 app.listen(port, () => {
+    connectToMongoDB().then(() => {
+        console.log('Connected to MongoDB');
+    });
     console.log(`Server is running on http://localhost:${port}`);
 });
